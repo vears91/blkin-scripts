@@ -1,3 +1,4 @@
+cd ~
 if [ -d ./ceph ]
 	then
 	cd ./ceph
@@ -9,6 +10,9 @@ else
 	if [ -n "$1" ]
 		then
 		git checkout $1
+	fi
+	./install-deps.sh
+	./autogen.sh
 fi
 
 if [ -d ./build ]

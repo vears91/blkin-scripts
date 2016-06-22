@@ -1,3 +1,4 @@
+#!/bin/bash
 lttng create $1
 lttng enable-event -u zipkin:timestamp
 lttng enable-event -u zipkin:keyval_integer

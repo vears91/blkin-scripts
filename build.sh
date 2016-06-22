@@ -1,9 +1,10 @@
+#!/bin/bash
 cd ~
 if [ -d ./ceph ]
 	then
 	cd ./ceph
 else
-	git clone git@github.com:vears91/ceph.git && cd ceph
+	git clone https://github.com/vears91/ceph.git && cd ceph
 	git remote add cbodley https://github.com/cbodley/ceph.git
 	git fetch origin
 	git fetch cbodley

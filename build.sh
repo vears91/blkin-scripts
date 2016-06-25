@@ -13,9 +13,10 @@ else
 		then
 		git checkout $1
 	fi
-	git submodule update --init --recursive
-	./install-deps.sh
 fi
+
+git submodule update --init --recursive
+./install-deps.sh
 
 if [ -d ./build ]
 	then

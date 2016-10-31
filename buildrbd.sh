@@ -35,4 +35,4 @@ lttng stop
 lttng destroy
 
 cd ~/babeltrace-zipkin/
-python3 babeltrace_zipkin.py $HOME/lttng-traces/fio/ust/uid/1000/64-bit/ -s 127.0.0.1 -p 9410
+python3 babeltrace_zipkin.py $HOME/lttng-traces/fio/ust/uid/1000/64-bit/ -s 127.0.0.1 -p 9411
